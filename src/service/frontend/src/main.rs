@@ -1,3 +1,5 @@
+mod pages;
+
 use yew::prelude::*;
 
 #[function_component(App)]
@@ -14,7 +16,7 @@ fn app() -> Html {
 fn header() -> Html {
     html! {
         <header class="header">
-            <div class="header__container">
+            <div class="container">
                 <img 
                     src="images/icon.jpg" 
                     class="logo"
@@ -36,19 +38,11 @@ fn header() -> Html {
 fn main_content() -> Html {
     html! {
         <main class="main light">
-            <QueuedBooks/>
+            <pages::home::QueuedBooks/>
         </main>
     }
 }
 
-#[function_component(QueuedBooks)]
-fn queued_books() -> Html {
-    html! {
-        <div>
-            
-        </div>
-    }
-}
 
 fn main() {
     yew::Renderer::<App>::new().render();

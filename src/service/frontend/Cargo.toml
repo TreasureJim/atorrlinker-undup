@@ -7,3 +7,4 @@ edition = "2024"
 yew = { version = "0.21.0", features = ["csr"] }
 yew-hooks = "0.3.4"
 yew-router = "0.18.0"
+yewdux = "0.11.0"

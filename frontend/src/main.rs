@@ -1,6 +1,24 @@
 mod pages;
+pub mod config;
 
 use yew::prelude::*;
+use yew_router::prelude::*;
+
+#[derive(Clone, Routable, PartialEq)]
+enum Route {
+    #[at("/")]
+    Home,
+    // TODO
+    // #[not_found]
+    // #[at("/404")]
+    // NotFound,
+}
+
+fn switch(route: Route) -> Html {
+    match route {
+        Route::Home => html! { <pages::home::HomePage /> }
+    }
+}
 
 #[function_component(App)]
 fn app() -> Html {
@@ -38,7 +56,9 @@ fn header() -> Html {
 fn main_content() -> Html {
     html! {
         <main class="main light">
-            <pages::home::QueuedBooks/>
+            <BrowserRouter>
+                <Switch<Route> render={switch} />
+            </BrowserRouter>
         </main>
     }
 }

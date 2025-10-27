@@ -151,6 +151,15 @@ fn generate_mock_books() -> Vec<Book> {
     ]
 }
 
+
+#[function_component(HomePage)]
+pub fn home_page() -> Html {
+    html! {
+        <div></div>
+    }
+}
+
+
 #[function_component(QueuedBooks)]
 pub fn queued_books() -> Html {
     let queued_books = generate_mock_books();

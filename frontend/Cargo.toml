@@ -4,6 +4,7 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+once_cell = "1.21.3"
 yew = { version = "0.21.0", features = ["csr"] }
 yew-hooks = "0.3.4"
 yew-router = "0.18.0"

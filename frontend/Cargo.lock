@@ -111,6 +111,7 @@ dependencies = [
 name = "frontend"
 version = "0.1.0"
 dependencies = [
+ "once_cell",
  "yew",
  "yew-hooks",
  "yew-router",

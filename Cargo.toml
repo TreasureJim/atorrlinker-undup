@@ -20,8 +20,10 @@ path = "src/service/service.rs"
 anyhow = "1.0.100"
 clap = { version = "4.5.48", features = ["derive"] }
 directories = "6.0.0"
+dotenv = "0.15.0"
 env_logger = "0.11.8"
 log = "0.4.28"
+pyo3 = "0.27.1"
 rocket = "0.5.1"
 rocket_dyn_templates = { version = "0.2.0", features = ["handlebars"] }
 rusqlite = "0.37.0"

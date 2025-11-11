@@ -1,0 +1,23 @@
+[package]
+name = "atorrlinker-undup"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "atorrlinker-undup"
+
+[dependencies]
+anyhow = "1.0.100"
+clap = { version = "4.5.48", features = ["derive"] }
+directories = "6.0.0"
+dotenv = "0.15.0"
+env_logger = "0.11.8"
+log = "0.4.28"
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = "1.0.145"
+sha2 = "0.10.9"
+thiserror = "2.0.16"
+
+[dev-dependencies]
+uuid = { version = "1.18.1", features = ["v4"] }
+tempfile = "3"

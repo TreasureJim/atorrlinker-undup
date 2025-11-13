@@ -1,15 +1,7 @@
 [package]
-name = "atorrlinker"
+name = "atorrlinker-undup"
 version = "0.1.0"
 edition = "2024"
-
-[[bin]]
-name = "atorrlinker-undup"
-path = "src/undup/cli.rs"
-
-[[bin]]
-name = "atorrlinker"
-path = "src/service/service.rs"
 
 [dependencies]
 anyhow = "1.0.100"
